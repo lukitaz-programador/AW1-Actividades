@@ -1,0 +1,33 @@
+/* JERARQUÍA
+universal
+tipo: toma un elemento del html
+clase o atributo: plantillas
+id
+*/
+
+/* genéricos */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+ul,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #eeeeee;
+    font-family: sans-serif;
+}
+
+a {
+    color: #941212;
+    text-decoration: none;
+}
+
