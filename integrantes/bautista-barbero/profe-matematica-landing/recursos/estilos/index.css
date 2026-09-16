@@ -1,0 +1,125 @@
+/*JERARQUÍA
+universal
+tipo: toma un elemento del html
+clase o atributo: plantillas
+id
+*/
+
+/*genéricos*/
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fuentes/Poppins-Regular.ttf);
+}
+
+/*reset*/
+html,
+body,
+h1,
+h2,
+h3,
+ul{
+    padding:0;
+    margin:0
+}
+
+html {
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #f5f1e8;
+    color: #22312b;
+}
+
+a {
+    color: #1b2e26;
+    text-decoration: none;
+}
+
+/*plantillas*/
+/* --- encabezado --- */
+.encabezado-principal {
+    padding: 5px 10px 20px 10px;
+    background-color: #1b2e26;
+    border-bottom: 4px solid #e3b23c;
+}
+
+.encabezado-principal nav{
+    width: 100%;
+    height: 60px;
+    padding: 5px 10px;
+    border: 1px solid #4a3422;
+    background-color: #1b2e26;
+}
+
+.encabezado-principal nav a {
+    color: #f5f1e8;
+    padding: 0 15px;
+}
+
+/* --- contenido --- */
+.contenido-principal {
+    padding: 10px 10px 30px 10px;
+}
+
+.contenido-principal h1 {
+    padding: 20px 0 10px 0;
+}
+
+.contenido-principal section {
+    padding: 20px 0;
+    border-top: 1px solid #cbbfa4;
+}
+
+.contenido-principal article {
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    border: 1px solid #cbbfa4;
+}
+
+.contenido-principal img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 6px solid #4a3422;
+    margin: 15px 0;
+}
+
+.contenido-principal form input,
+.contenido-principal form textarea {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #4a3422;
+    background-color: #ffffff;
+    color: #22312b;
+}
+
+.contenido-principal form button {
+    padding: 10px 25px;
+    background-color: #e3b23c;
+    color: #1b2e26;
+    border: 1px solid #4a3422;
+}
+
+/* --- pie --- */
+.pie-principal {
+    padding: 20px 10px 5px 10px;
+    background-color: #1b2e26;
+    border-top: 4px solid #e3b23c;
+}
+
+.pie-principal li {
+    padding: 5px 0;
+    color: #f5f1e8;
+}
+
+.pie-principal a {
+    color: #f5f1e8;
+}
