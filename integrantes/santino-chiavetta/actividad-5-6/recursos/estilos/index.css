@@ -1,0 +1,123 @@
+@font-face{
+    font-family: Poppins;
+    src: url(../fuentes/Poppins-Regular.ttf);
+}
+
+/* Genéricos */
+
+*{
+    box-sizing:border-box;
+}
+
+/* Reset */
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+ul{
+    margin:0;
+    padding:0;
+}
+
+html{
+    font-family:Poppins, Verdana, sans-serif;
+}
+
+body{
+    background-color:#eeeeee;
+}
+
+a{
+    color:#941212;
+    text-decoration:none;
+}
+
+/* Encabezado */
+
+.encabezado-principal{
+
+    padding:10px;
+    background-color:#191281;
+    border-bottom:2px solid #d8d8d8;
+
+}
+
+.encabezado-principal nav{
+
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    background:#bbbbbb;
+    border:1px solid black;
+
+}
+
+.encabezado-principal nav a{
+
+    margin-right:20px;
+
+}
+
+/* Contenido */
+
+.contenido-principal{
+
+    padding:15px;
+
+}
+
+.contenido-principal section{
+
+    margin-top:20px;
+
+}
+
+.contenido-principal article{
+
+    margin-top:20px;
+
+}
+
+.contenido-principal img{
+
+    margin-top:10px;
+    margin-bottom:10px;
+    border:1px solid gray;
+
+}
+
+.contenido-principal form input,
+.contenido-principal form textarea{
+
+    display:block;
+    width:100%;
+    padding:8px;
+    margin-bottom:10px;
+
+}
+
+.contenido-principal form button{
+
+    padding:10px;
+
+}
+
+/* Pie */
+
+.pie-principal{
+
+    margin-top:30px;
+    padding:20px 10px;
+    background:#bbbbbb;
+    border-top:2px solid #3b0000;
+
+}
+
+.pie-principal ul{
+
+    list-style:none;
+
+}
