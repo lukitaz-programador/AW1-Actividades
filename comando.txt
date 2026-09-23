@@ -1,0 +1,50 @@
+Comandos de consola 
+
+Comandos de inicio 
+-Instalar Node.js
+
+-Verificar node: 
+node -v
+
+-Verificar npm:
+npm -v
+
+-Instalar manejador de paquetes pnpm
+https://pnpm.io/es/
+https://www.npmjs.com/
+
+-Hacer el cd a la ruta del repositorio y del proyecto
+cd (copy path)
+
+-Instalar manejador de paquetes pnpm:
+(i (instalar) -g (global))
+npm i -g pnpm 
+
+-Verificar pnpm:
+pnpm -v
+
+Por proyecto:
+
+-Verificar si no existe el package.json si no existe ejecutamos:
+npm i -g pnpm  
+
+-Configurar scripts:
+Modificamos el package.json para que en vez de test este dev y poder abrir el five-server 
+
+-Instalar el paquete five-server
+pn add five-server
+
+-Reinstalar paquetes si existe package.json:
+pn install 
+
+-Abrir un puerto:
+pn dev 
+
+-Creamos .fiveserverrc y src/ (acá van todas las carpetas y archivos)
+{
+    "root": "src"
+}
+
+/*
+vamos a trabajar con una carpeta que se llama source y desde ahi intenta levantar el index.html
+*/

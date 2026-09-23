@@ -1,0 +1,1 @@
+Estoy trabajando sobre la actividad 6 de Bautista Barbero.

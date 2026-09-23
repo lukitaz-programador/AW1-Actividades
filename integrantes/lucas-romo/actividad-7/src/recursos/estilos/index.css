@@ -1,0 +1,199 @@
+/* =========================
+   GENÉRICOS
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fuentes/Poppins-Regular.ttf);
+}
+
+/* =========================
+   RESET
+========================= */
+
+html,
+body,
+h1,
+h2,
+h3,
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #f5f1e8;
+    color: #22312b;
+}
+
+a {
+    color: #1b2e26;
+    text-decoration: none;
+}
+
+
+/* =========================
+   ENCABEZADO
+========================= */
+
+.encabezado-principal {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    padding: 5px 10px 20px 10px;
+    background-color: #1b2e26;
+    border-bottom: 4px solid #e3b23c;
+}
+
+.encabezado-principal nav {
+    width: 100%;
+    min-height: 60px;
+    padding: 5px 10px;
+
+    border: 1px solid #4a3422;
+    background-color: #1b2e26;
+
+    /* FLEX */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.encabezado-principal nav a {
+    color: #f5f1e8;
+    padding: 10px 15px;
+}
+
+
+/* =========================
+   CONTENIDO
+========================= */
+
+.contenido-principal {
+    padding: 10px 10px 30px 10px;
+
+    /* GRID */
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.contenido-principal h1 {
+    padding: 20px 0 10px 0;
+}
+
+.contenido-principal section {
+    padding: 20px 0;
+    border-top: 1px solid #cbbfa4;
+}
+
+.contenido-principal article {
+    padding: 15px;
+    margin-bottom: 15px;
+
+    background-color: #ffffff;
+    border: 1px solid #cbbfa4;
+}
+
+.contenido-principal img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    border: 6px solid #4a3422;
+    margin: 15px 0;
+}
+
+
+/* =========================
+   GRILLA DE SERVICIOS
+========================= */
+
+.grilla-servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.grilla-servicios article {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   FORMULARIOS
+========================= */
+
+.contenido-principal form input,
+.contenido-principal form textarea {
+    display: block;
+    width: 100%;
+
+    padding: 8px;
+    margin-bottom: 15px;
+
+    border: 1px solid #4a3422;
+    background-color: #ffffff;
+    color: #22312b;
+}
+
+.contenido-principal form button {
+    padding: 10px 25px;
+
+    background-color: #e3b23c;
+    color: #1b2e26;
+
+    border: 1px solid #4a3422;
+}
+
+
+/* =========================
+   PIE
+========================= */
+
+.pie-principal {
+    padding: 20px 10px 5px 10px;
+
+    background-color: #1b2e26;
+    border-top: 4px solid #e3b23c;
+}
+
+.pie-principal li {
+    padding: 5px 0;
+    color: #f5f1e8;
+}
+
+.pie-principal a {
+    color: #f5f1e8;
+}
+
+
+/* =========================
+   VÍNCULO FLOTANTE
+========================= */
+
+.vinculo-flotante {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+    padding: 12px 18px;
+
+    background-color: #e3b23c;
+    color: #1b2e26;
+
+    border: 2px solid #1b2e26;
+    border-radius: 8px;
+
+    font-weight: bold;
+}
