@@ -39,11 +39,6 @@ a{
 
 .encabezado-principal{
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    position:sticky;
-    top:0;
     padding:10px;
     background-color:#191281;
     border-bottom:2px solid #d8d8d8;
@@ -52,9 +47,9 @@ a{
 
 .encabezado-principal nav{
 
-    width:auto;
+    width:100%;
     padding:10px;
-    margin-top:0;
+    margin-top:10px;
     background:#bbbbbb;
     border:1px solid black;
 
@@ -77,31 +72,6 @@ a{
 .contenido-principal section{
 
     margin-top:20px;
-
-}
-
-.servicios{
-
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr;
-    gap:20px;
-
-}
-
-.servicios img{
-
-    width:100%;
-    max-width:300px;
-
-}
-
-@media (max-width:999px){
-
-    .servicios{
-
-        grid-template-columns:1fr;
-
-    }
 
 }
 
@@ -149,16 +119,5 @@ a{
 .pie-principal ul{
 
     list-style:none;
-
-}
-
-.boton-whatsapp{
-
-    position:fixed;
-    right:20px;
-    bottom:20px;
-    padding:10px;
-    background-color:#25d366;
-    color:white;
 
 }
