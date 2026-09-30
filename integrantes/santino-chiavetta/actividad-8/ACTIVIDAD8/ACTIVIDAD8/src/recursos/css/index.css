@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Sora';
+    src: url(./fuentes/Sora-Regular.ttf);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+html{
+    font-family: 'Sora';
+    font-size: 16px;
+}
+
+body{
+    margin: 0;
+}
+
+/* Flexbox facilita acomodar los elementos del encabezado. */
+.encabezado-principal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.encabezado-principal,
+.pie-principal{
+    background-color: #536347;
+    color: white;
+}
+
+.encabezado-principal a{
+    color: white;
+}
+
+.encabezado-principal ul{
+    display: flex;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contenido-principal{
+    padding: 16px;
+}
+
+.lista-cabanas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.cabana{
+    padding: 12px;
+    border: 1px solid #536347;
+}
+
+.cabana img{
+    width: 100%;
+}
+
+.formulario-reservas label{
+    display: block;
+    margin-top: 10px;
+}
+
+.formulario-reservas input,
+.formulario-reservas textarea{
+    display: block;
+    width: 100%;
+    padding: 8px;
+}
+
+.formulario-reservas button{
+    margin-top: 10px;
+    padding: 8px;
+}
+
+.pie-principal{
+    padding: 16px;
+}

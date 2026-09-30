@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retiro Sustentable - Reservas</title>
+    <link rel="stylesheet" href="./recursos/css/index.css">
+</head>
+<body>
+    <!-- Se utiliza header para el encabezado principal. -->
+    <header class="encabezado-principal">
+        <a href="./index.html">
+            <img src="./recursos/imagenes/logo-rs.svg" alt="Isologotipo de Retiro Sustentable" width="150">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./reservas.html">Reservas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contenido-principal">
+        <h1>Reservas</h1>
+        <h2>Contactanos</h2>
+        <section class="formulario-reservas">
+            <!-- Se utiliza form para cargar los datos de la reserva. -->
+            <form>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" name="telefono" id="telefono">
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+
+                <label for="fecha-desde">Fecha desde</label>
+                <input type="date" name="fecha-desde" id="fecha-desde">
+
+                <label for="fecha-hasta">Fecha hasta</label>
+                <input type="date" name="fecha-hasta" id="fecha-hasta">
+
+                <label for="comentario">Comentario</label>
+                <textarea name="comentario" id="comentario"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer class="pie-principal">
+        <p>&copy; 2026 Retiro Sustentable. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
