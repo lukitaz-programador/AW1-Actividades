@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Chiavetta Detailing</title>
+    <link rel="stylesheet" href="recursos/estilos/index.css">
+</head>
+
+<body>
+    <header class="encabezado-principal">
+        <nav aria-label="Navegación principal">
+            <a href="index.html">Inicio</a>
+            <a href="contacto.html" aria-current="page">Contacto</a>
+        </nav>
+    </header>
+
+    <a class="vinculo-flotante" href="https://wa.me/" target="_blank" rel="noopener noreferrer">
+        WhatsApp
+    </a>
+
+    <main class="contenido-principal">
+        <h1>Contacto</h1>
+        <p>Completá el formulario para consultar por un servicio o pedir un turno.</p>
+
+        <section>
+            <h2>Enviá tu consulta</h2>
+            <form class="formulario-contacto" action="./contacto.html" method="post">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" name="nombre" id="nombre" autocomplete="name" required>
+
+                <label for="mail">mail:</label>
+                <input type="mail" name="mail" id="mail" autocomplete="mail" required>
+
+                <label for="telefono">Telefono:</label>
+                <input type="tel" name="telefono" id="telefono" autocomplete="tel" required>
+
+                <label for="servicio">Servicio solicitado:</label>
+                <select name="servicio" id="servicio" required>
+                    <option value="">Seleccioná un servicio</option>
+                    <option value="lavado-premium">Lavado premium</option>
+                    <option value="limpieza-interiores">Limpieza de interiores</option>
+                    <option value="pulido-encerado">Pulido y encerado</option>
+                    <option value="Otro">Otro</option>
+                </select>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="pie-principal">
+        <p>Chiavetta Detailing</p>
+    </footer>
+</body>
+
+</html>

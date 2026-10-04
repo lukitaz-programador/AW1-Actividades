@@ -1,0 +1,134 @@
+/* =========================
+GENÉRICOS
+========================= */
+* { box-sizing: border-box; }
+html { font-family: Arial, Verdana, sans-serif; }
+
+
+    body { margin: 0; background-color: #f3f3f3; color: #252525; }
+    a { color: #b21f2d; text-decoration: none; }
+
+
+h1, 
+h2, 
+h3, 
+p { margin-top: 0; }
+
+/* =========================
+ENCABEZADO
+========================= */
+.encabezado-principal {
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+    padding: 15px;
+    background-color: #252525;
+    border-bottom: 3px solid #b21f2d;
+}
+.encabezado-principal nav 
+{ display: flex; justify-content: center; gap: 25px; }
+
+.encabezado-principal a 
+{ color: #fff; }
+
+
+.contenido-principal 
+{ display: grid; gap: 20px; padding: 25px 10%; }
+
+.contenido-principal >
+ p { position: static; }
+
+ .contenido-principal section
+ { padding: 20px 0; border-top: 1px solid #ccc; }
+
+ .grilla-servicios
+ { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+
+ .grilla-servicios article
+ { padding: 20px; background-color: #fff; border: 1px solid #ccc; }
+
+ .grilla-servicios .contenedor-relativo
+ { padding-top: 45px; }
+
+
+ .boton-contacto, .formulario-contacto button
+ {
+    display: inline-block;
+    padding: 10px 18px;
+    color: #fff;
+    background-color: #b21f2d;
+    border: 0;
+    border-radius: 4px;
+}
+
+/* =========================
+FORMULARIO
+========================= */
+.formulario-contacto 
+{ max-width: 600px; }
+
+
+.formulario-contacto label
+ { display: block; margin: 12px 0 5px; }
+
+
+.formulario-contacto input,
+
+
+.formulario-contacto select,
+
+
+.formulario-contacto textarea {
+    display: block;
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #888;
+    border-radius: 4px;
+}
+.formulario-contacto button 
+{ margin-top: 15px; cursor: pointer; }
+
+
+input:focus-visible, select:focus-visible, textarea:focus-visible,
+
+button:focus-visible, a:focus-visible 
+{ outline: 3px solid #b21f2d; outline-offset: 2px; }
+
+/* =========================
+POSICIONAMIENTO
+========================= */
+.contenedor-relativo {
+    
+    position: relative;
+}
+.elemento-absoluto {
+  
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 4px 8px;
+    color: #fff;
+    background-color: #b21f2d;
+}
+.vinculo-flotante {
+    
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+    z-index: 900;
+    padding: 12px 18px;
+    color: #fff;
+    background-color: #b21f2d;
+    border-radius: 5px;
+}
+
+
+.pie-principal { padding: 20px; color: #fff; text-align: center; background-color: #252525; }
+
+
+@media (max-width: 700px) {
+    .contenido-principal { padding: 20px; }
+    .grilla-servicios { grid-template-columns: 1fr; }
+}
